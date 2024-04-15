@@ -25,7 +25,7 @@ public class Application_Csv {
             fileReader.close();
 
         } catch (IOException e) {
-            System.err.println("Erro ao ler o arquivo CSV: " + e.getMessage());
+            System.out.println("Erro ao ler o arquivo CSV: " + e.getMessage());
         }
     }
 }
