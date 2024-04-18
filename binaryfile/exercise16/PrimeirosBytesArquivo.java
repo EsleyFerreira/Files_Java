@@ -1,8 +1,11 @@
+package br.edu.uniaeso;
+import java.io.InputStream
+import java.io.FileInputStream
 import java.io.*;
 
 public class PrimeirosBytesArquivo {
     public static void main(String[] args) {
-        String nomeArquivo = "home/esley/Documentos/Intellij/exercise16/arquivo.bin";
+        String nomeArquivo = "home/esley/Documentos/Intellij/binaryfile/exercise16/arquivo.bin";
 
         try (InputStream inputStream = new FileInputStream(nomeArquivo)) {
             byte[] buffer = new byte[100];
