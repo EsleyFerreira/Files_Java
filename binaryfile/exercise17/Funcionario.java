@@ -1,3 +1,4 @@
+package br.edu.uniaeso;
 import java.io.RandomAccessFile;
 import java.io.IOException;
 
@@ -38,7 +39,7 @@ class Funcionario {
 }
 
 public class GerenciaFuncionarios {
-    private static final String FILE_PATH = "home/esley/Documentos/Intellij/exercise17/funcionarios.dat";
+    private static final String FILE_PATH = "home/esley/Documentos/Intellij/binaryfile/exercise17/funcionarios.dat";
 
     public static void main(String[] args) throws IOException {
         RandomAccessFile file = new RandomAccessFile(FILE_PATH, "rw");
@@ -59,7 +60,6 @@ public class GerenciaFuncionarios {
         file.writeInt(funcionarioExcluido.getId());
         file.writeUTF(funcionarioExcluido.getNome());
         file.writeDouble(funcionarioExcluido.getSalario());
-
         file.close();
     }
 }
