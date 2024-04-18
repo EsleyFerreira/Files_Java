@@ -6,10 +6,11 @@ import java.io.IOException;
 
 public class MostraArquivoTexto {
     public static void main(String[] args) {
-        BufferedReader in;
+        BufferedReader in = null;
         try {
             in = new BufferedReader(new FileReader("/home/esley/Documentos/Intellij/textfiles/exercise01/file.txt"));
-            while ((in.readLine()) != null) {
+            String str;
+            while ((str = in.readLine()) != null) {
                 System.out.println("Hello");
             }
             in.close();
