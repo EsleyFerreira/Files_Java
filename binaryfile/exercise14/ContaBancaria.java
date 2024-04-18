@@ -1,3 +1,4 @@
+package br.edu.uniaeso;
 import java.io.*;
 
 class ContaBancaria implements Serializable {
