@@ -1,3 +1,4 @@
+package br.edu.uniaeso;
 import com.opencsv.CSVWriter;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -5,7 +6,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        String csvFile = "home/esley/Documentos/Intellij/exercise19/funcionarios.csv";
+        String csvFile = "home/esley/Documentos/Intellij/csv/file/exercise19/funcionarios.csv";
 
         try (CSVWriter writer = new CSVWriter(new FileWriter(csvFile, true))) {
             Scanner scanner = new Scanner(System.in);
