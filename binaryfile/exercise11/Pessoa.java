@@ -1,3 +1,4 @@
+package br.edu.uniaeso;
 import java.io.Serializable;
 import java.io.FileOutputStream;
 import java.io.ObjectOutputStream;
