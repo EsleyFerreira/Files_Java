@@ -1,3 +1,5 @@
+package br.edu.uniaeso;
+import java.io.Serializable
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
