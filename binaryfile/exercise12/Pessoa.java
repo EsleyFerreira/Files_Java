@@ -1,3 +1,5 @@
+package br.edu.uniaeso;
+import java.io.Serializable
 import java.io.*;
 
 class Pessoa implements Serializable {
@@ -18,7 +20,7 @@ class Pessoa implements Serializable {
 
 public class Deserializacao {
     public static void main(String[] args) {
-        try (ObjectInputStream objetoEntrada = new ObjectInputStream(new FileInputStream("home/esley/Documentos/Intellij/exercise12/pessoa.dat"))) {
+        try (ObjectInputStream objetoEntrada = new ObjectInputStream(new FileInputStream("home/esley/Documentos/Intellij/binaryfile/exercise12/pessoa.dat"))) {
             Pessoa pessoa = (Pessoa) objetoEntrada.readObject();
             System.out.println("Detalhes da Pessoa:");
             System.out.println(pessoa);
